@@ -1,7 +1,11 @@
-4 + 3
-
-if (4 +3 === 7) {
-    alert("You're Smart!")
-        console.log("Siema")
-    
+function sayHello() {
+    console.log("Hello")
 }
+
+sayHello();
+
+var sayBye = function(){
+    console.log("Bye");
+}
+
+sayBye();
