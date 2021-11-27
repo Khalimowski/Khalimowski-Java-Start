@@ -1,3 +1,16 @@
+
+function sayHello() {
+    console.log("Hello")
+}
+
+sayHello();
+
+var sayBye = function(){
+    console.log("Bye");
+}
+
+sayBye();
+
 function work() {
     console.log("Working Hard Hard");
     console.log("Working Very Hard");
@@ -11,3 +24,4 @@ function work2(){
 }
 
 work2()
+
