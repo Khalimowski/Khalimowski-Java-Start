@@ -1,11 +1,5 @@
-function sayHello() {
-    console.log("Hello")
+function multiply(a,b) {
+ return a*b
 }
 
-sayHello();
-
-var sayBye = function(){
-    console.log("Bye");
-}
-
-sayBye();
+alert(multiply(3,4));
