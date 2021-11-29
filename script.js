@@ -1,3 +1,4 @@
+Carless-Key-Excercis-with-function
 function checkDriverAge() {
 	var age = prompt("What is your age?");
 	if (Number(age) < 18) {
@@ -9,4 +10,3 @@ function checkDriverAge() {
 	}
 }
 
-checkDriverAge()
