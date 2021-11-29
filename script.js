@@ -1,35 +1,12 @@
-
-function multiply(a,b) {
- return a*b
+Carless-Key-Excercis-with-function
+function checkDriverAge() {
+	var age = prompt("What is your age?");
+	if (Number(age) < 18) {
+		alert("Sorry, you are too yound to drive this car. Powering off");
+	} else if (Number(age) > 18) {
+		alert("Powering On. Enjoy the ride!");
+	} else if (Number(age) === 18) {
+		alert("Congratulations on your first year of driving. Enjoy the ride!");
+	}
 }
-
-alert(multiply(3,4));
-
-
-function sayHello() {
-    console.log("Hello")
-}
-
-sayHello();
-
-var sayBye = function(){
-    console.log("Bye");
-}
-
-sayBye();
-
-function work() {
-    console.log("Working Hard Hard");
-    console.log("Working Very Hard");
-}
-
-work()
-
-function work2(){
-    console.log("Trying my best to understand this")
-    console.log("Sooner or later, I will understand this")
-}
-
-work2()
-
 
