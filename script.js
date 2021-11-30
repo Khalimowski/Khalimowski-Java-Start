@@ -1,4 +1,5 @@
 
+
 var database = [{
     username: "Kacper",
     password: "secret"
@@ -29,6 +30,3 @@ function signIn(user, pass) {
 } else {
     alert("Sorry, wrong username and password")
     }
-}
-
-signIn(userNamePrompt, passwordPrompt);
