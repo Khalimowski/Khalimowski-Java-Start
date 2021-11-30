@@ -1,12 +1,22 @@
-function checkDriverAge() {
-	var age = prompt("What is your age?");
-	if (Number(age) < 18) {
-		alert("Sorry, you are too yound to drive this car. Powering off");
-	} else if (Number(age) > 18) {
-		alert("Powering On. Enjoy the ride!");
-	} else if (Number(age) === 18) {
-		alert("Congratulations on your first year of driving. Enjoy the ride!");
-	}
-}
+// using this array, 
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
 
-checkDriverAge()
+// 1. Remove the Banana from the array.
+array.shift();
+
+// 2. Sort the array in order. 
+array.sort();
+
+// 3. Put "Kiwi" at the end of the array.
+array.push("Kiwi");
+
+// 4. Remove "Apples" from the array.
+array.splice(0, 1);
+
+// 5. Sort the array in reverse order. 
+array.reverse();
+
+// using this array, 
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// access "Oranges".
+array2[1][1][0];
