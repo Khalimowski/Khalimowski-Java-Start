@@ -1,38 +1,28 @@
+var todolist = [
+    "clean room",
+    "Brush Teeth",
+    "Press ups",
+    "Studya JavaScript",
+    "Eat three times a day",
+];
 
 
-var database = [{
-    username: "Kacper",
-    password: "secret"
-},
-{   username: "Jan",
-    password: "secret"},
-    {
-     username: "Stefan",
-     password: "tajny"   
-    }
-]
+var todolist2 = [
+    "clean rooms!",
+    "Brush Teeth1",
+    "Press ups!",
+    "Studya JavaScript!",
+    "Eat three times a day!",
+];
+var todolistLength = todolist.length
+//for (var i=0; i < todolistLength; i++) {
+ //   todolist.pop();
+//}
 
-var newsFeed =[{
-    username: "Tomek",
-    timeline: "Jestem Tata"
+function logsTodos(todo, i){
+    console.log(todo, i)
+}
 
-},
-{
-    username: "Joanna",
-    timeline: "Jestem Mama"
-},
-{
-    username: "Krzysztof",
-    timeline: "Jestem Brat"
-}]
+todolist.forEach (logsTodos)
+todolist2.forEach (logsTodos)
 
-var userNamePrompt = prompt("What's your username?");
-var passwordPrompt = prompt("What's your password?");
-
-function signIn(user, pass) {
-    if (user === database[0, 1, 2].username && 
-        pass === database[0, 1, 2].password) {
-        console.log(newsFeed);
-} else {
-    alert("Sorry, wrong username and password")
-    }
