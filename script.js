@@ -6,6 +6,7 @@ var todolist = [
     "Eat three times a day",
 ];
 
+
 var todolist2 = [
     "clean rooms!",
     "Brush Teeth1",
@@ -24,3 +25,4 @@ function logsTodos(todo, i){
 
 todolist.forEach (logsTodos)
 todolist2.forEach (logsTodos)
+
