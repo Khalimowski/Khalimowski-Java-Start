@@ -7,7 +7,9 @@ var todolist = [
     6 + " " + "Zdanie",
     7 + " " + "Zdanie",
 
+
 ];
+
 var todolist2 = [
     "clean rooms!",
      "Brush Teeth!",
@@ -52,5 +54,4 @@ while (WhileList < 7) {
 //    console.log(todo, i)
 //}
 
-//todolist.forEach (logsTodos)
-//todolist2.forEach (logsTodos)
+
