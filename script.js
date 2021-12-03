@@ -15,6 +15,9 @@ var database = [
 ];
 
 
+]
+
+
 var newsfeed = [
 	{
 		username: "Kacper",
@@ -41,6 +44,7 @@ function isUserValid(username, password) {
 	return false;
 }
 
+
 function signIn(username, password){
  if (isUserValid(username, password)) {
 			console.log(newsfeed);
@@ -52,3 +56,6 @@ function signIn(username, password){
 var userNamePrompt = prompt("What's your username?")
 var passwordPrompt = prompt("What's your Password?")
 signIn(userNamePrompt, passwordPrompt)
+=======
+
+
