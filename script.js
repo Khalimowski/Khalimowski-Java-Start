@@ -1,56 +1,54 @@
-var todolist = [
-    1 + " " + "Zdanie",
-    2 + " " + "Zdanie",
-    3 + " " + "Zdanie",
-    4 + " " + "Zdanie",
-    5 + " " + "Zdanie",
-    6 + " " + "Zdanie",
-    7 + " " + "Zdanie",
 
+var database = [
+	{
+		username: "kacper",
+		password: "haslo"
+	},
+	{
+		username: "tomek",
+		password: "haslo"
+	},
+	{
+		username: "asia",
+		password: "haslo"
+	},
 ];
-var todolist2 = [
-    "clean rooms!",
-     "Brush Teeth!",
-     "Press ups!",
-     "Studya JavaScript!",
-     "Eat three times a day!",
-     "Ucz sie JavaScript",
-     "Dasz rade",
-         ];   
 
-for (var i=0; i < todolist.length; i++){
-    console.log(todolist[i] + " - " + todolist2[i])
-    
-          }
 
- var WhileList = 0
- 
-while (WhileList < 7) { 
-    console.log(WhileList + " " + todolist2[WhileList])
-    WhileList++
+var newsfeed = [
+	{
+		username: "Kacper",
+		timeline: "So tired from all that learning!"
+	},
+	{
+		username: "Tomek",
+		timeline: "Javascript is sooooo cool!"
+	},
+	{
+		username: "Asia",
+		timeline: "Javascript is preeetyy cool!"
+	}
+];
+function isUserValid(username, password) {
+	for (var i = 0; i <database.length; i++){
+		if(database[i].username === username &&
+			 database[i].password === password){
+				 return true;
+	
+	
+		}
+	}	
+	return false;
 }
-         
-         
- 
 
-     
-     
+function signIn(username, password){
+ if (isUserValid(username, password)) {
+			console.log(newsfeed);
+		} else {
+			alert("Sorry, incorrect username and password")
+		}
+	}
 
-
-
-        
-    
-   
-    
-
-
-
-
-
-
-//function logsTodos(todo, i){
-//    console.log(todo, i)
-//}
-
-//todolist.forEach (logsTodos)
-//todolist2.forEach (logsTodos)
+var userNamePrompt = prompt("What's your username?")
+var passwordPrompt = prompt("What's your Password?")
+signIn(userNamePrompt, passwordPrompt)
